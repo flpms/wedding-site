@@ -86,10 +86,12 @@ header img {
 .title { font-size: 7em; text-align: center; }
 
 section p.normal {
-  font-size: 3em;
+  font-size: 2.5em;
   font-family: "grafolita-script";
   text-align: center;
 }
+
+section p.normal span { margin-right: 20px; }
 
 section p.highlight {
   background: #604830;
