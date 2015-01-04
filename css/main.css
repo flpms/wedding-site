@@ -86,20 +86,22 @@ header img {
 .title { font-size: 7em; text-align: center; }
 
 section p.normal {
-  font-size: 2.5em;
+  font-size: 1.5em;
   font-family: "grafolita-script";
-  text-align: center;
+  margin: 0 auto 0 auto;
+  text-align: left;
+  width: 360px
 }
 
-section p.normal span { margin-right: 20px; }
+section p.normal span { float:left; height: 40px; margin-right: 20px; }
 
 section p.highlight {
   background: #604830;
   color: #F0F0D8;
-  font-size: 3em;
+  font-size: 2.0em;
   font-family: "grafolita-script";
   margin: 20px 0;
-  padding: 10px 0;
+  padding: 10px 20px;
   text-align: center;
 }
 
