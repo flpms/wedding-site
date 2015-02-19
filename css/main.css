@@ -46,10 +46,7 @@ hr {
  * their containers: h5bp.com/i/440
  */
 
-audio,
-canvas,
-img,
-video { vertical-align: middle; }
+audio, canvas, img, video { vertical-align: middle; }
 
 /*
  * Remove default fieldset styles.
@@ -79,23 +76,40 @@ textarea { resize: vertical; }
    ========================================================================== */
 header img {
   display: block;
-  margin: 100px auto 100px auto;
+  margin: 60px auto 40px auto;
   width: 300px;
 }
 
 .title { font-size: 7em; text-align: center; }
 
-.navigation { background: rgba(255, 255, 255, 0.2); margin-top: 130px; padding: 10px 0; }
-.navigation ul {  margin: 0 auto;  width: 700px; }
+header p.highlight {
+  border-top: 1px solid #604830;
+  border-bottom: 1px solid #604830;
+  font-size: 3.0em;  
+  margin: 35px auto 25px auto;
+  text-align: center;
+  padding: 13px;
+  width: 600px;
+  word-spacing: 0.4em;
+}
+
+header p.highlight span { margin-right: 10px; }
+
+.navigation { background: rgba(255, 255, 255, 0.4); margin-top: 120px; padding: 10px 0; }
+.navigation ul {  margin: 0 auto;  width: 800px; }
 
 .navigation ul li {
   display: inline-block;
-  font-size: 3.5em;
+  font-size: 3.0em;
   list-style: none;
   margin: 10px auto 0 auto;
   text-align: center;
-  width: 200px;
+  width: 250px;
 }
+
+.navigation ul li a { text-shadow: 0 -1px 1px #000; }
+
+section { min-height: 690px; }
 
 section p.normal {
   font-size: 1.5em;
@@ -107,13 +121,20 @@ section p.normal {
 
 section p.normal span { float:left; height: 40px; margin-right: 20px; }
 
-section p.highlight {
+section .highlight {
   background: #604830;
+  border-top: 2px dashed #F0F0D8;
+  border-bottom: 2px dashed #F0F0D8;
   color: #F0F0D8;
-  font-size: 2.0em;
-  font-family: "grafolita-script";
+  font-family: "lush";
+  font-size: 2.3em;
   margin: 0 0 20px 0;
   padding: 10px 20px;
+  text-align: center;
+}
+
+.ceremony-directions p, .gift-wedding p {
+  font: lighter small-caps normal 2em/1.23em "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
 }
 
@@ -196,9 +217,7 @@ section p.highlight {
 
 .clearfix:before, .clearfix:after { content: " "; /* 1 */ display: table; /* 2 */}
 
-.clearfix:after {
-    clear: both;
-}
+.clearfix:after { clear: both; }
 
 /*
  * For IE 6/7 only
