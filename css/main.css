@@ -1,37 +1,7 @@
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html,
-button,
-input,
-select,
-textarea { color: #222; }
-
+html,button,input,select,textarea { color: #222; }
 html { font-size: 1em; line-height: 1.4; }
-
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
 ::-moz-selection { background: #b3d4fc; text-shadow: none; }
-
 ::selection { background: #b3d4fc; text-shadow: none; }
-
-/*
- * A better looking default horizontal rule
- */
-
 hr {
     display: block;
     height: 1px;
@@ -40,30 +10,9 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
-
-/*
- * Remove the gap between images, videos, audio and canvas and the bottom of
- * their containers: h5bp.com/i/440
- */
-
 audio, canvas, img, video { vertical-align: middle; }
-
-/*
- * Remove default fieldset styles.
- */
-
 fieldset { border: 0; margin: 0; padding: 0; }
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
 textarea { resize: vertical; }
-
-/* ==========================================================================
-   Browse Happy prompt
-   ========================================================================== */
-
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -74,14 +23,9 @@ textarea { resize: vertical; }
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-header img {
-  display: block;
-  margin: 60px auto 40px auto;
-  width: 300px;
-}
+header img { display: block; margin: 60px auto 40px auto; width: 300px; }
 
 .title { font-size: 7em; text-align: center; }
-
 header p.highlight {
   border-top: 1px solid #604830;
   border-bottom: 1px solid #604830;
@@ -92,22 +36,20 @@ header p.highlight {
   width: 600px;
   word-spacing: 0.4em;
 }
-
 header p.highlight span { margin-right: 10px; }
 
-.navigation { background: rgba(255, 255, 255, 0.4); margin-top: 120px; padding: 10px 0; }
-.navigation ul {  margin: 0 auto;  width: 800px; }
-
+.navigation { background: rgba(255, 255, 255, 0.4); margin-top: 120px; margin-bottom: 100px; padding: 10px 0; }
+.navigation ul {  margin: 10px auto; text-align: center; width: 1024px; }
 .navigation ul li {
   display: inline-block;
-  font-size: 3.0em;
+  font: 200 small-caps normal 1.5em "lato", Helvetica, Arial, sans-serif;
   list-style: none;
-  margin: 10px auto 0 auto;
+  margin: 0 auto;
+  text-shadow: 0 -1px 0 #604830;
   text-align: center;
-  width: 250px;
+  width: 244px;
 }
-
-.navigation ul li a { text-shadow: 0 -1px 1px #000; }
+.navigation ul li a, { text-shadow: 0 -1px 1px #000 !important; }
 
 section { min-height: 690px; }
 
@@ -123,29 +65,92 @@ section p.normal span { float:left; height: 40px; margin-right: 20px; }
 
 section .highlight {
   background: #604830;
-  border-top: 2px dashed #F0F0D8;
-  border-bottom: 2px dashed #F0F0D8;
   color: #F0F0D8;
   font-family: "lush";
   font-size: 2.3em;
-  margin: 0 0 20px 0;
+  margin: 0 0 40px 0;
   padding: 10px 20px;
   text-align: center;
 }
 
-.ceremony-directions p, .gift-wedding p {
-  font: lighter small-caps normal 2em/1.23em "Helvetica Neue", Helvetica, Arial, sans-serif;
+.cute-line-bottom { border-bottom: 2px dashed #F0C0C0; }
+.cute-line-left { border-left: 2px dashed #F0C0C0; }
+.cute-line-right { border-right: 2px dashed #F0C0C0; }
+.cute-line-top { border-top: 2px dashed #F0C0C0; }
+
+.ceremony-directions .location, .gift-wedding p { 
+  font: 200 small-caps normal 1.5em/1.23em "lato", Helvetica, Arial, sans-serif;
   text-align: center;
+}
+
+.ceremony-directions p { font: 200 normal normal 1.5em/1.23em "lato", Helvetica, Arial, sans-serif; }
+.ceremony-directions p .bold {
+  font-variant: normal;
+  font-family: "grafolita-script";
+  font-weight: bold;
+}
+
+.ceremony-directions .date { margin-top: 20px; }
+.date .day-month {display: inline-block; margin:0 auto; width: 120px;}
+.date .day-month .day{
+  color: #F0C0C0;
+  display: block;
+  font-family: "lush";
+  font-size: 5em;
+  line-height: 1em;
+  text-align: center;
+}
+
+.date .day-month .month{
+  color: #604830;
+  display: block;
+  font-family: "grafolita-script";
+  font-size: 2.5em;
+  line-height: 0.8em;
+}
+
+.date .year {
+  display: inline-block;
+  font-family: "lush";
+  font-size: 2.2em;
+  text-align: left;
+  width: 10px;
+  word-wrap: break-word;
+}
+
+.ceremony-directions .location {
+  border-left: 2px dashed #F0C0C0;
+  line-height: 1.563em;
+  padding: 20px 40px;
+  text-align: left;
+}
+
+iframe.map { display: block; margin: 70px auto 0 auto; width: 900px; }
+
+.gifts-list p { padding: 5px 0 30px 0; }
+.gifts-list ul li, .gifts-list .panel-heading { font: 200 normal normal 1.45em "lato"; }
+.gifts-list ul li:before{ content: '- ';}
+
+
+.gifts-list .stores { list-style: none; }
+.gifts-list .stores a { text-shadow: 0 1px 0 #F0F0D8; }
+.gifts-list .stores .badge {
+  background: #BEE075;
+  border-radius: 50px;
+  color: #F0F0D8;
+  float: right;
+  font-size: 0.8em;
+  line-height: 20px;
+  margin-top: 5px;
+  text-align: center;
+  min-width: 40px;
 }
 
 /* ==========================================================================
    Helper classes
-   ========================================================================== */
-
-/*
- * Image replacement
+   ========================================================================== 
+   Image replacement
  */
-
 .ir {
     background-color: transparent;
     border: 0;
@@ -255,30 +260,15 @@ section .highlight {
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
     a, a:visited { text-decoration: underline; }
-
     a[href]:after { content: " (" attr(href) ")"; }
-
     abbr[title]:after { content: " (" attr(title) ")"; }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
     .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
-
     pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-
     thead { display: table-header-group; /* h5bp.com/t */ }
-
     tr, img { page-break-inside: avoid; }
-
     img { max-width: 100% !important; }
-
     @page { margin: 0.5cm; }
-
     p, h2, h3 { orphans: 3; widows: 3; }
-
     h2, h3 { page-break-after: avoid; }
 }
