@@ -150,11 +150,14 @@ section .highlight {
 iframe.map { display: block; margin: 70px auto 20px auto; width: 100%; }
 
 .gifts-list p { padding: 5px 0 30px 0; }
-.gifts-list ul li, .gifts-list .panel-heading { font: 200 normal normal 1.45em "lato"; }
-.gifts-list ul li:before{ content: '- ';}
+.gifts-list ul li, .gifts-list .panel-heading, .info-text { font-family: 'lato', sans-serif; font-size: 1.3em; }
+.info-text { padding: 10px;}
+.list-group-item { padding: 4px 15px; }
+.list-group-item span { font-size: 0.8em; margin-right: 13px; }
+.gifts-list .stores li:before{ content: '- ';}
 
 .gifts-list .stores { list-style: none; }
-.gifts-list .stores a { text-shadow: 0 1px 0 #F0F0D8; }
+.gifts-list .stores a { text-shadow: 1px 1px 0 #604830; }
 .gifts-list .stores .badge {
   background: #BEE075;
   border-radius: 50px;
