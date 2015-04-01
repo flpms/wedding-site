@@ -73,7 +73,12 @@ header p.highlight span { margin-right: 10px; }
 @media screen and (max-width: 480px) {
   header img { margin: 20px auto 20px auto; width: 198px; }
   .title { font-size: 4em; }
-  header p.highlight { font-size: 2em; width: 300px; padding: 10px; }
+  header p.highlight { 
+    font-size: 2em;
+    margin: 35px auto 25px auto;
+    padding: 10px;
+    width: 300px;
+  }
   .number-date { display: inline-block; }
   .navigation {display: block;}
   .navigation ul { width: 100%; }
@@ -100,8 +105,6 @@ section .highlight {
   padding: 10px 20px;
   text-align: center;
 }
-
-
 
 .cute-line-bottom { border-bottom: 2px dashed #F0C0C0; }
 .cute-line-left { border-left: 2px dashed #F0C0C0; }
