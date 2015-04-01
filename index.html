@@ -43,7 +43,13 @@
                 <span class="text-date">Onze de abril de dois mil e quinze.</span>
                 <span class="number-date">11/04/2015</span>
             </p>
-
+            <div ng-app="timeCounter" class="time-counter">
+                <div ng-controller="MainDate as date">
+                    <span ng-show="date.getShowMessageFuture(date.realLeftDay)">Faltam </span>
+                    <span ng-show="date.getShowMessagePast(date.realLeftDay)">Se passaram </span>
+                    {{date.daysLeft}} dias e {{date.hourLeft + 1}}h
+                </div>
+            </div>
         </header>
 
         <nav class="navigation">
