@@ -38,7 +38,7 @@ header p.highlight {
   word-spacing: 0.4em;
 }
 
-header p.highlight span { margin-right: 10px; }
+header p.highlight span { margin-right: 13px; }
 
 .number-date { display: none; }
 
@@ -75,8 +75,8 @@ header p.highlight span { margin-right: 10px; }
   .title { font-size: 4em; }
   header p.highlight { 
     font-size: 2em;
-    margin: 35px auto 25px auto;
-    padding: 10px;
+    margin: 25px auto 20px auto;
+    padding: 8px;
     width: 300px;
   }
   .number-date { display: inline-block; }
